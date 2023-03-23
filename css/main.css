@@ -179,3 +179,5 @@ img {
             align-items: center; }
     .main-banner .btns .btn-white {
       margin-left: 20px; }
+  .main-banner .notif {
+    max-width: 260px; }
