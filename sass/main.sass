@@ -112,7 +112,8 @@ img
 				list-style-type: none
 				>li
 					display: inline-block
-					margin-right: 40px
+					margin-right: 50px
+					position: relative
 					>a
 						display: block
 						text-decoration: none
@@ -121,6 +122,39 @@ img
 						transition: color .4s ease
 					a:hover
 						color: $accent
+					.sub-menu
+						position: absolute
+						background-color: #fff
+						box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.193)
+						top: 30px
+						z-index: 10
+						border-radius: 10px
+						font-size: 14px
+						padding: 5px 0
+						li
+							display: block
+							a
+								display: block
+								text-decoration: none
+								font-weight: 400
+								color: #000
+								transition: color .4s ease
+								padding: 3px 10px
+							a:hover
+								color: $accent
+				.hsm
+					&::after
+						content: ''
+						display: block
+						width: 8px
+						height: 4px
+						background-image: url(/img/arrow.svg)
+						position: absolute
+						top: 12px
+						right: -16px
+						background-position: center
+						background-size: cover
+						background-repeat: no-repeat
 
 .notif
 	background-color: $light_accent
@@ -147,8 +181,10 @@ img
 	.content
 		h1
 			color: #000000
+			margin-top: 20px
 			font-size: 48px
 			font-weight: 700
+			line-height: 1.2
 		.desc
 			color: #808080
 			margin: 14px 0 44px
